@@ -1,0 +1,19 @@
+# Agriculture & Fisheries Category Pages
+# This file contains all the pages/services available under the Agriculture & Fisheries category
+
+pages:
+  - name: 'Ask for free seeds, seedlings, fertilizers, or fingerlings'
+    slug: 'ask-for-free-seeds-seedlings-fertilizers-or-fingerlings'
+    description: 'Free and subsidized agricultural inputs for registered Cabuyao farmers — rice seeds, vegetable seedlings, organic fertilizers, tilapia and bangus fingerlings, and urban farming kits. RSBSA registration required.'
+
+  - name: 'Get veterinary services for livestock'
+    slug: 'get-veterinary-services-for-livestock'
+    description: 'Free vaccination, deworming, and artificial insemination for livestock through the City Agriculture Office; livestock dispersal programs (chickens, goats) for qualified farming households.'
+
+  - name: 'Attend farming or fishing training'
+    slug: 'attend-farming-or-fishing-training'
+    description: 'Regular CAO training programs for Cabuyao farmers and fisherfolk — modern farming, high-value crops, organic agriculture, aquaculture, fish processing, and livelihood-linked sessions.'
+
+  - name: 'Borrow farm tools or equipment from the LGU'
+    slug: 'borrow-farm-tools-or-equipment-from-the-lgu'
+    description: 'Access to LGU farm machinery (tractors, tillers, irrigation pumps), fisheries gear (nets, fish cages), and Shared Service Facilities for food processing and packaging.'

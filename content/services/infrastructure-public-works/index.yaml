@@ -1,0 +1,19 @@
+# Infrastructure & Public Works Category Pages
+# This file contains all the pages/services available under the Infrastructure & Public Works category
+
+pages:
+  - name: 'Report damaged roads, bridges, or drainage'
+    slug: 'report-damaged-roads-bridges-or-drainage'
+    description: 'How to report potholes, damaged drainage, flooding, and broken streetlights to the Cabuyao City Engineering Office or DPWH — including what each office handles and flood-prone barangays.'
+
+  - name: 'Request access to barangay water supply systems'
+    slug: 'request-access-to-barangay-water-supply-systems'
+    description: 'Water connection requests, reporting pressure or service issues, MERALCO electricity connections, and telecom coverage concerns in Cabuyao City.'
+
+  - name: 'Use public facilities like gyms, barangay halls, or multipurpose centers'
+    slug: 'use-public-facilities-like-gyms-barangay-halls-or-multipurpose-centers'
+    description: "How to reserve and use covered courts, multipurpose halls, barangay halls, and evacuation centers in Cabuyao City's 18 barangays."
+
+  - name: 'Rent stalls in public markets or use LGU-managed cemeteries'
+    slug: 'rent-stalls-in-public-markets-or-use-lgu-managed-cemeteries'
+    description: 'Apply for public market stall rentals and access LGU cemetery services in Cabuyao City — lot assignment, burial coordination, and burial assistance for indigent families.'

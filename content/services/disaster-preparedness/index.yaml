@@ -1,0 +1,15 @@
+# Disaster Preparedness Category Pages
+# This file contains all the pages/services available under the Disaster Preparedness category
+
+pages:
+  - name: 'Join disaster drills and evacuation planning'
+    slug: 'join-disaster-drills-and-evacuation-planning'
+    description: 'Cabuyao City DRRMO drills, BLS and water rescue training, go-bag checklist, and evacuation center locations for all Poblacion barangays (Uno–Diez) and beyond.'
+
+  - name: 'Learn about emergency response procedures and evacuation routes'
+    slug: 'learn-about-emergency-response-procedures-and-evacuation-routes'
+    description: 'Step-by-step flood evacuation guide, risk zones (Marinig, lakeshore, Barangay Diez/Nueve/Siete), rescue hotlines (0966-690-7561 / 0995-672-8959), and post-disaster return procedures.'
+
+  - name: 'Access disaster preparedness information and early warning systems'
+    slug: 'access-disaster-preparedness-information-and-early-warning-systems'
+    description: "Cabuyao's early warning systems (USHER seismic device, flood sensors, barangay sirens), 24/7 CDRRMO operations center, DRRM fund uses, and how to stay informed during typhoon season."

@@ -1,0 +1,15 @@
+# Housing & Land Use Category Pages
+# This file contains all the pages/services available under the Housing & Land Use category
+
+pages:
+  - name: 'Apply for socialized housing or relocation projects'
+    slug: 'apply-for-socialized-housing-or-relocation-projects'
+    description: 'Apply for socialized housing, CMP, 4PH, or informal settler relocation through the CUDHAO — full step-by-step guide, required documents, and priority barangays for Cabuyao City.'
+
+  - name: 'Request zoning, land use, or building permits'
+    slug: 'request-zoning-land-use-or-building-permits'
+    description: 'Cabuyao City CLUP zoning zones, prohibited construction areas (lakeshore, riverbanks, fault lines), and how to get a Zoning Clearance and Building Permit from the CPDO and OBO.'
+
+  - name: 'Ask about available relocation sites in case of demolition'
+    slug: 'ask-about-available-relocation-sites-in-case-of-demolition'
+    description: 'Your rights before demolition (RA 7279), CUDHAO relocation sites, priority danger-zone barangays, housing types available (off-site, in-city, 4PH, CMP), and free legal aid via PAO.'

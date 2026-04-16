@@ -1,0 +1,19 @@
+# Social Welfare Category Pages
+# This file contains all the pages/services available under the Social Welfare category
+
+pages:
+  - name: 'Apply for senior citizen, solo parent, or PWD assistance'
+    slug: 'apply-for-senior-citizen-solo-parent-or-pwd-assistance'
+    description: 'Eligibility, benefits, and step-by-step process to apply for Senior Citizen social pension, Solo Parent ID and financial aid, and PWD ID and assistive device support through the CSWDO.'
+
+  - name: 'Receive relief goods or cash aid during disasters'
+    slug: 'receive-relief-goods-or-cash-aid-during-disasters'
+    description: 'How to receive barangay-distributed relief goods and CSWDO emergency cash assistance (AICS) for fire victims, flood-affected families, and other disaster situations.'
+
+  - name: 'Join livelihood or skills training programs'
+    slug: 'join-livelihood-or-skills-training-programs'
+    description: 'CSWDO livelihood programs for indigent families, 4Ps beneficiaries, solo parents, and PWDs — starter kits, skills training, and community livelihood projects.'
+
+  - name: 'Get family and community welfare support'
+    slug: 'get-family-and-community-welfare-support'
+    description: 'Family counseling, child protection, VAWC support, AICS medical and burial assistance, and special protection services for at-risk individuals — delivered through the CSWDO and your Barangay Social Welfare Officer (BSWO).'

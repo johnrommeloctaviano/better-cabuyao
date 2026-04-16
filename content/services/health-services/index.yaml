@@ -1,0 +1,23 @@
+# Health Services Category Pages
+# This file contains all the pages/services available under the Health Services category
+
+pages:
+  - name: 'Get free check-ups, basic medicines, and vaccines'
+    slug: 'get-free-check-ups-basic-medicines-and-vaccines'
+    description: 'Access free medical check-ups, basic medicines, and vaccination services at City Health Offices and Barangay Health Centers across Cabuyao City.'
+
+  - name: 'Access maternal care and child immunization'
+    slug: 'access-maternal-care-and-child-immunization'
+    description: "Free prenatal and postnatal care, Operation Timbang nutrition monitoring, and routine child immunization through Cabuyao's Expanded Program on Immunization (EPI)."
+
+  - name: 'Go to the local hospital for treatment or confinement'
+    slug: 'go-to-the-local-hospital-for-treatment-or-confinement'
+    description: 'How to access Cabuyao City Hospital (Ospital ng Cabuyao) for emergency care, surgery, and inpatient confinement, including PhilHealth and referral procedures.'
+
+  - name: 'Join health programs (nutrition, dengue control, TB treatment)'
+    slug: 'join-health-programs-nutrition-dengue-control-tb-treatment'
+    description: 'City-led health programs including nutrition support, dengue prevention, TB-DOTS treatment, and Universal Health Care initiatives in Cabuyao City.'
+
+  - name: 'Access mental health services (YAKAP Program)'
+    slug: 'access-mental-health-services-yakap-program'
+    description: 'Free counseling, psychosocial support, and crisis intervention through the YAKAP Mental Health Program at City Health Office II — PhilHealth-accredited until December 2026.'

@@ -1,0 +1,8 @@
+# Legislative Department Pages
+layout: grid
+title: 'Legislative Department'
+description: 'The Sangguniang Panlungsod ng Cabuyao — city council composition, legislative powers, committee system, and how to access council services.'
+pages:
+  - name: 'City Council Overview'
+    slug: 'legislative'
+    description: 'Composition, powers, committees, ordinance process, and public access information for the Sangguniang Panlungsod ng Cabuyao (2025–2028 term).'

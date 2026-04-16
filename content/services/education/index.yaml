@@ -1,0 +1,19 @@
+# Education Category Pages
+# This file contains all the pages/services available under the Education category
+
+pages:
+  - name: 'Enroll children in LGU daycare or preschool programs'
+    slug: 'enroll-children-in-lgu-daycare-or-preschool-programs'
+    description: 'Free Child Development Centers (CDCs) in all 18 barangays of Cabuyao City — how to enroll children ages 3–4, what to bring, and how to find the nearest center.'
+
+  - name: 'Apply for local scholarships'
+    slug: 'apply-for-local-scholarships'
+    description: 'How to apply for the "Iskolar ng Bagong Cabuyao" LGU scholarship, school-based financial aid, SHS vouchers, and national programs like CHED and TESDA.'
+
+  - name: 'Access educational support programs from the LGU'
+    slug: 'access-educational-support-programs-from-the-lgu'
+    description: 'LGU education support programs including school supplies, feeding, uniform assistance, youth leadership, SPED services, and the Alternative Learning System (ALS).'
+
+  - name: 'Learn about supplementary activities for schools in your area'
+    slug: 'learn-about-supplementary-activities-for-schools-in-your-area'
+    description: 'Overview of Cabuyao City schools and colleges — 19 public elementary, 8 public high schools, 100+ private schools, Pamantasan ng Cabuyao, and youth enrichment programs.'

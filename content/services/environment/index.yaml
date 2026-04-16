@@ -1,0 +1,11 @@
+# Environment Category Pages
+# This file contains all the pages/services available under the Environment category
+
+pages:
+  - name: 'Join clean-up drives and tree planting activities'
+    slug: 'join-clean-up-drives-and-tree-planting-activities'
+    description: 'How to join CENRO-organized clean-up drives, shoreline clean-ups, tree planting, bamboo planting, and environmental education programs in Cabuyao City.'
+
+  - name: 'Report illegal logging, quarrying, or fishing'
+    slug: 'report-illegal-logging-quarrying-or-fishing'
+    description: 'Report illegal dumping, open burning, illegal fishing in Laguna de Bay, industrial pollution, and other environmental violations to CENRO, DENR-EMB, or the LLDA.'

@@ -1,0 +1,23 @@
+# Business & Livelihood Category Pages
+# This file contains all the pages/services available under the Business & Livelihood category
+
+pages:
+  - name: "Apply for barangay clearance and mayor's business permits"
+    slug: 'apply-for-barangay-clearance-and-mayors-business-permits'
+    description: "Complete guide to starting a business in Cabuyao City — DTI registration, barangay clearance, Mayor's Permit (BPLO), BMBE certification, and Negosyo Center assistance."
+
+  - name: 'Renew permits and pay local business taxes'
+    slug: 'renew-permits-and-pay-local-business-taxes'
+    description: "Annual business permit renewal at the BPLO and local business tax payment at the City Treasurer's Office — deadlines, requirements, and how to avoid surcharges."
+
+  - name: 'Rent stalls in public markets'
+    slug: 'rent-stalls-in-public-markets'
+    description: 'How to apply for a public market stall in Cabuyao City — requirements, rental fees, and the application process at the Market Administration Office.'
+
+  - name: 'Join trade fairs, business expos, or tourism promotions'
+    slug: 'join-trade-fairs-business-expos-or-tourism-promotions'
+    description: 'Expand your business reach through Cabuyao trade fairs, OTOP, Go Lokal!, and free DTI e-commerce and online selling training programs.'
+
+  - name: 'Access livelihood programs and financial assistance'
+    slug: 'access-livelihood-programs-and-financial-assistance'
+    description: 'Livelihood grants, starter kits, P3 loans, and TESDA skills training available to all 18 barangays through the LGU, DOLE, DTI, and the Negosyo Center Cabuyao.'

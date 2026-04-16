@@ -1,0 +1,10 @@
+# Department Pages
+# This file contains all the pages/governments available under the Department
+
+pages:
+  - name: 'Executive'
+    slug: 'executive'
+    description: 'The Office of the City Mayor, Vice Mayor, and all executive department offices of Cabuyao City — including CHO, CSWDO, CDRRMO, BPLO, PESO, CUDHAO, and more. City Hall address, trunkline, and office directory.'
+  - name: 'Legislative'
+    slug: 'legislative'
+    description: 'The Sangguniang Panlungsod ng Cabuyao — 10 councilors, Vice Mayor Batallones as presiding officer, 27 standing committees, and how to attend sessions or access council services.'

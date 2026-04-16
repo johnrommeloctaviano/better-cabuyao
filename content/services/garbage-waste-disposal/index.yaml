@@ -1,0 +1,19 @@
+# Garbage and Waste Disposal Category Pages
+# This file contains all the pages/services available under the Garbage and Waste Disposal category
+
+pages:
+  - name: 'Check garbage collection schedules and request pickup'
+    slug: 'check-garbage-collection-schedules-and-request-pickup'
+    description: "Cabuyao City's 2026 garbage collection schedule by barangay cluster — Poblacion, urban, lakeshore, and peripheral areas — plus how to request bulk or special pickup."
+
+  - name: 'Learn proper waste segregation and disposal methods'
+    slug: 'learn-proper-waste-segregation-and-disposal-methods'
+    description: 'Mandatory waste segregation under RA 9003 — biodegradable, non-biodegradable, and recyclables; Cabuyao MRF locations by barangay; household composting and where garbage goes after collection.'
+
+  - name: 'Request special waste collection (hazardous materials, electronics)'
+    slug: 'request-special-waste-collection-hazardous-materials-electronics'
+    description: 'How to dispose of bulk items, hazardous household waste (batteries, chemicals), electronic waste, and medical waste in Cabuyao City.'
+
+  - name: 'Report illegal dumping or waste management violations'
+    slug: 'report-illegal-dumping-or-waste-management-violations'
+    description: 'How to report illegal dumping, open burning, and waste violations to the Barangay Hall and CENRO — and how to join community clean-up drives in Cabuyao City.'
