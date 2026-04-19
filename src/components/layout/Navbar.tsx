@@ -32,10 +32,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
       {/* Top bar with language switcher and additional links */}
       <div className="border-b border-gray-200">
-        <div className="container mx-auto px-4 flex justify-end items-center h-10">
+        <div className="container mx-auto px-4 flex justify-end items-center h-8">
           <div className="flex items-center space-x-4">
             <a
               href="https://bettergov.ph/join-us"
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               <img
                 src="/better-cabuyao-logo.png"
                 alt="Better Cabuyao Logo"
-                className="h-14 md:h-24 lg:h-28 w-auto mr-2 md:mr-3"
+                className="h-10 md:h-14 lg:h-16 w-auto mr-2 md:mr-3"
               />
               <div>
                 <div className="text-sm md:text-base text-black font-bold leading-tight">
@@ -182,7 +182,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       <div className={`lg:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="container mx-auto px-2 pt-2 pb-4 space-y-1 border-t border-gray-200 bg-white">
+        <div className="container mx-auto px-2 pt-2 pb-4 space-y-1 border-t border-gray-200 bg-white/90 backdrop-blur-md">
           {mainNavigation.map(item => (
             <div key={item.label}>
               <button
