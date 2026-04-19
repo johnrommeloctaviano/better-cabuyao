@@ -1,10 +1,10 @@
 import React from 'react';
 
 const hotlines = [
-  { label: 'PNP Cabuyao', number: '0949 745 6048' },
-  { label: 'CDRRMO', number: '0966 690 7561' },
-  { label: 'BFP Cabuyao', number: '0932 741 1457' },
   { label: 'National Emergency', number: '911' },
+  { label: 'CDRRMO', number: '0966 690 7561' },
+  { label: 'PNP Cabuyao', number: '0949 745 6048' },
+  { label: 'BFP Cabuyao', number: '0932 741 1457' },
 ];
 
 const Separator = () => (

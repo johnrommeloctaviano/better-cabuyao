@@ -89,7 +89,39 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               {t('footer.copyright')}
             </p>
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <a
+                href="https://bettergov.ph/join-us"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Us
+              </a>
+              <a
+                href="https://bettergov.ph/about"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About BetterGov
+              </a>
+              <a
+                href="https://www.gov.ph"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Official Gov.ph
+              </a>
+              <a
+                href="https://bettergov.ph/philippines/hotlines"
+                className="text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hotlines
+              </a>
               {/* <a
                 href="/privacy"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
