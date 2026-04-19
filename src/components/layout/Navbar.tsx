@@ -5,6 +5,7 @@ import type { LanguageType } from '../../types/index';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGES } from '../../i18n/languages';
+import EmergencyTopbar from './EmergencyTopbar';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+      <EmergencyTopbar />
       {/* Top bar with language switcher and additional links */}
       <div className="border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-end items-center h-8">
