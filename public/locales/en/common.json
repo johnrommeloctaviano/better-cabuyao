@@ -20,7 +20,8 @@
     "description": "Stay updated with the latest government activities and announcements."
   },
   "weather": {
-    "title": "Weather Updates"
+    "title": "Weather Updates",
+    "subtitle": "Current conditions in Cabuyao City, Laguna"
   },
   "forex": {
     "title": "Foreign Exchange Rates"
