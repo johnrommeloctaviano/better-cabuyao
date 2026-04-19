@@ -31,10 +31,32 @@ export default function Hero() {
       {/* Background decoration */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-10"
+        className="pointer-events-none absolute inset-0"
       >
-        <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-white" />
-        <div className="absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-white" />
+        {/* Grid lines */}
+        <svg
+          className="absolute inset-0 h-full w-full opacity-[0.07]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="hero-grid"
+              width="48"
+              height="48"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 48 0 L 0 0 0 48"
+                fill="none"
+                stroke="white"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-grid)" />
+        </svg>
+        {/* Diagonal highlight streak */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent" />
       </div>
 
       <div className="relative container mx-auto px-4 py-16 md:py-28">
