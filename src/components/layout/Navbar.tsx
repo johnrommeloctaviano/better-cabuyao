@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img
-                src="/better-cabuyao-logo.png"
+                src="/cabuyao-city-seal.png"
                 alt="Better Cabuyao Logo"
                 className="h-10 md:h-14 lg:h-16 w-auto mr-2 md:mr-3"
               />
