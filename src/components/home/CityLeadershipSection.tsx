@@ -1,4 +1,3 @@
-import { User, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Link } from 'react-router-dom';
 import Section from '../ui/Section';
