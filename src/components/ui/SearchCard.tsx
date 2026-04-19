@@ -5,11 +5,21 @@ import { Search } from 'lucide-react';
 interface SearchCardProps {
   placeholder?: string;
   label?: string;
+  suggestions?: string[];
 }
+
+const defaultSuggestions = [
+  'Business permit',
+  'Birth certificate',
+  'Health services',
+  'Barangay clearance',
+  'Social welfare',
+];
 
 export function SearchCard({
   placeholder = 'Search services, departments…',
   label = 'How can we help you?',
+  suggestions = defaultSuggestions,
 }: SearchCardProps) {
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
@@ -45,6 +55,28 @@ export function SearchCard({
           </button>
         </div>
       </form>
+
+      {suggestions.length > 0 && (
+        <div className="mt-5">
+          <p className="mb-2 text-xs font-medium text-gray-400 uppercase tracking-wide">
+            Key suggestions
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {suggestions.map(s => (
+              <button
+                key={s}
+                type="button"
+                onClick={() =>
+                  navigate(`/search?q=${encodeURIComponent(s)}`)
+                }
+                className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 transition hover:border-primary-300 hover:bg-primary-50 hover:text-primary-700"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
