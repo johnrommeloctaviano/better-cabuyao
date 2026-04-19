@@ -41,9 +41,9 @@ export default function Hero() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 animate-fade-in">
           {/* Left column — branding, CTAs, quick links */}
           <div>
-            <p className="mb-3 text-sm font-semibold tracking-widest text-primary-200 uppercase">
+            <span className="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold tracking-widest text-primary-100 uppercase backdrop-blur-sm">
               {import.meta.env.VITE_GOVERNMENT_NAME}
-            </p>
+            </span>
             <Heading className="text-white leading-tight mb-4">
               {t('hero.title')}
             </Heading>
