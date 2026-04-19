@@ -1,4 +1,3 @@
-import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
 import { Card, CardContent } from '@bettergov/kapwa/card';
@@ -95,17 +94,14 @@ const timelineEntries: TimelineEntry[] = [
 
 export default function HistoryTimeline() {
   return (
-    <Section className="bg-gray-50" id="history">
-      <Heading level={2} className="text-center">
-        History of Cabuyao City
-      </Heading>
-      <Text className="text-gray-500 text-center mx-auto mb-10">
+    <div>
+      <Heading level={2}>History of Cabuyao City</Heading>
+      <Text className="text-gray-500 mb-8">
         From a lakeside fishing village to one of CALABARZON&rsquo;s
         fastest-growing cities — centuries of resilience and progress.
       </Text>
 
-      <div className="max-w-3xl mx-auto">
-        <ol className="relative border-l-2 border-primary-200 ml-4">
+      <ol className="relative border-l-2 border-primary-200 ml-4">
           {timelineEntries.map((entry, idx) => (
             <li key={idx} className="mb-8 ml-8 last:mb-0">
               {/* Circle node */}
@@ -146,7 +142,6 @@ export default function HistoryTimeline() {
             </li>
           ))}
         </ol>
-      </div>
-    </Section>
+    </div>
   );
 }
