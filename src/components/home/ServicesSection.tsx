@@ -62,15 +62,15 @@ export default function ServicesSection({
                   {getIcon(category.icon)}
                 </div>
 
-                <h3 className="text-base font-semibold mb-2 text-gray-900 leading-snug">
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 leading-snug">
                   {category.category}
                 </h3>
 
-                <Text className="text-sm text-gray-500 leading-relaxed flex-1">
+                <Text className="text-base text-gray-500 leading-relaxed flex-1">
                   {category.description}
                 </Text>
 
-                <div className="mt-4 flex items-center gap-1 text-primary-600 text-sm font-semibold">
+                <div className="mt-4 flex items-center gap-1 text-primary-600 text-base font-semibold">
                   <span>Learn more</span>
                   <LucideIcons.ChevronRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
                 </div>
