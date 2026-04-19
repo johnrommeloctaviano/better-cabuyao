@@ -1,6 +1,7 @@
 import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
+import { Card, CardContent } from '@bettergov/kapwa/card';
 import {
   Waves,
   Church,
@@ -95,18 +96,18 @@ const timelineEntries: TimelineEntry[] = [
 export default function HistoryTimeline() {
   return (
     <Section className="bg-gray-50" id="history">
-      <div className="max-w-3xl mx-auto">
-        <Heading level={2} className="text-center">
-          History of Cabuyao City
-        </Heading>
-        <Text className="text-gray-500 text-center mx-auto mb-10">
-          From a lakeside fishing village to one of CALABARZON&rsquo;s
-          fastest-growing cities — centuries of resilience and progress.
-        </Text>
+      <Heading level={2} className="text-center">
+        History of Cabuyao City
+      </Heading>
+      <Text className="text-gray-500 text-center mx-auto mb-10">
+        From a lakeside fishing village to one of CALABARZON&rsquo;s
+        fastest-growing cities — centuries of resilience and progress.
+      </Text>
 
+      <div className="max-w-3xl mx-auto">
         <ol className="relative border-l-2 border-primary-200 ml-4">
           {timelineEntries.map((entry, idx) => (
-            <li key={idx} className="mb-10 ml-8 last:mb-0">
+            <li key={idx} className="mb-8 ml-8 last:mb-0">
               {/* Circle node */}
               <span
                 className={`absolute -left-[1.15rem] flex h-9 w-9 items-center justify-center rounded-full border-2 ${entry.accent}`}
@@ -114,27 +115,34 @@ export default function HistoryTimeline() {
                 {entry.icon}
               </span>
 
-              {/* Period badge */}
-              <span
-                className={`mb-2 inline-block rounded-full border px-2.5 py-0.5 text-xs font-semibold ${entry.accent}`}
-              >
-                {entry.period}
-              </span>
+              <Card>
+                <CardContent className="p-5">
+                  {/* Period badge */}
+                  <span
+                    className={`mb-2 inline-block rounded-full border px-2.5 py-0.5 text-xs font-semibold ${entry.accent}`}
+                  >
+                    {entry.period}
+                  </span>
 
-              {/* Title */}
-              <h3 className="text-base font-bold text-gray-900 mb-2">
-                {entry.title}
-              </h3>
+                  {/* Title */}
+                  <h3 className="text-base font-bold text-gray-900 mb-3">
+                    {entry.title}
+                  </h3>
 
-              {/* Highlights */}
-              <ul className="space-y-1">
-                {entry.highlights.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-400" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
+                  {/* Highlights */}
+                  <ul className="space-y-1.5">
+                    {entry.highlights.map((point, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-sm text-gray-600"
+                      >
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-400" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </li>
           ))}
         </ol>
