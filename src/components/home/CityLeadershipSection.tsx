@@ -4,14 +4,13 @@ import Section from '../ui/Section';
 import { Heading } from '../ui/Heading';
 import executiveData from '../../../content/government/departments/executive.json';
 
-const { MAYOR, VICE_MAYOR, HONORIFIC_TITLE, YEAR_ELECTED } =
-  executiveData as {
-    MAYOR: string;
-    VICE_MAYOR: string;
-    HONORIFIC_TITLE: string;
-    YEAR_ELECTED: string;
-    [key: string]: string;
-  };
+const { MAYOR, VICE_MAYOR, HONORIFIC_TITLE, YEAR_ELECTED } = executiveData as {
+  MAYOR: string;
+  VICE_MAYOR: string;
+  HONORIFIC_TITLE: string;
+  YEAR_ELECTED: string;
+  [key: string]: string;
+};
 
 interface Leader {
   title: string;

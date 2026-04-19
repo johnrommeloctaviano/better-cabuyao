@@ -141,7 +141,7 @@ export default function HistoryTimeline() {
             </Card>
           </li>
         ))}
-        </ol>
+      </ol>
     </div>
   );
 }

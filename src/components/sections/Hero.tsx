@@ -29,10 +29,7 @@ export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-500 text-white">
       {/* Background decoration */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-      >
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         {/* Grid lines */}
         <svg
           className="absolute inset-0 h-full w-full opacity-[0.07]"

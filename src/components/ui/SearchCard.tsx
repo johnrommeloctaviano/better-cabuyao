@@ -26,8 +26,7 @@ export function SearchCard({
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (query.trim())
-      navigate(`/search?q=${encodeURIComponent(query.trim())}`);
+    if (query.trim()) navigate(`/search?q=${encodeURIComponent(query.trim())}`);
   };
 
   return (
@@ -66,9 +65,7 @@ export function SearchCard({
               <button
                 key={s}
                 type="button"
-                onClick={() =>
-                  navigate(`/search?q=${encodeURIComponent(s)}`)
-                }
+                onClick={() => navigate(`/search?q=${encodeURIComponent(s)}`)}
                 className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-600 transition hover:border-primary-300 hover:bg-primary-50 hover:text-primary-700"
               >
                 {s}

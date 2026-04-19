@@ -53,10 +53,7 @@ export default function ServicesSection({
             to={`/services/${category.slug}`}
             className="group block"
           >
-            <Card
-              hoverable
-              className="h-full transition-shadow"
-            >
+            <Card hoverable className="h-full transition-shadow">
               <CardContent className="flex flex-col h-full p-5">
                 <div className="bg-primary-50 text-primary-600 p-2.5 rounded-lg mb-4 self-start group-hover:bg-primary-100 transition-colors">
                   {getIcon(category.icon)}
