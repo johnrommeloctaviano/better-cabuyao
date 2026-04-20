@@ -126,7 +126,15 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} BetterCabuyao.Org | MIT | CC BY 4.0 | Built by John Rommel Octaviano
+              © {new Date().getFullYear()} BetterCabuyao.Org | MIT | CC BY 4.0 | Built by{' '}
+              <a
+                href="https://facebook.com/octavianojohnrommel"
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                John Rommel Octaviano
+              </a>
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               <a
