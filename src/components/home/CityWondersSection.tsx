@@ -11,7 +11,6 @@ import {
 type Wonder = {
   name: string;
   category: string;
-  rating: number;
   highlights: string[];
 };
 
@@ -19,7 +18,6 @@ const wonders: Wonder[] = [
   {
     name: 'St. Polycarp Parish Church',
     category: 'Historical & Cultural',
-    rating: 6,
     highlights: [
       'One of the oldest churches in Laguna (est. 1700s)',
       'Central to Cabuyao\'s identity and religious life',
@@ -30,7 +28,6 @@ const wonders: Wonder[] = [
   {
     name: 'Cabuyao Town Plaza & Rizal Monument',
     category: 'Historical & Cultural',
-    rating: 5,
     highlights: [
       'Public gathering space beside the church',
       'Features a monument of José Rizal',
@@ -40,7 +37,6 @@ const wonders: Wonder[] = [
   {
     name: 'Cabuyao City Hall & Heritage Area',
     category: 'Historical & Cultural',
-    rating: 0,
     highlights: [
       'Government center with modern infrastructure',
       "Area reflects the city's transition from town to urban hub",
@@ -49,7 +45,6 @@ const wonders: Wonder[] = [
   {
     name: 'Laguna de Bay Lakeshore',
     category: 'Nature & Outdoor',
-    rating: 6,
     highlights: [
       'Largest lake in the Philippines',
       'Scenic sunrise and sunset views',
@@ -59,7 +54,6 @@ const wonders: Wonder[] = [
   {
     name: 'Pulo-Diezmo Road Industrial Strip',
     category: 'Modern Attractions',
-    rating: 6,
     highlights: [
       '"The Enterprise City of the Philippines"',
       'Home to major companies like Nestlé Philippines',
@@ -69,7 +63,6 @@ const wonders: Wonder[] = [
   {
     name: 'Cabuyao City Fiesta (Feast of St. Polycarp)',
     category: 'Festivals & Events',
-    rating: 7,
     highlights: [
       'Held annually every January',
       'Street dancing, parades, and religious activities',
@@ -107,31 +100,16 @@ function WonderCard({ wonder }: { wonder: Wonder }) {
 
       {/* Caption */}
       <div className="absolute inset-x-0 bottom-0 p-5 text-white">
-        <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/60">
+        <span className="text-xs font-mono uppercase tracking-[0.2em] text-white/60">
           {wonder.category}
         </span>
-        <h3 className="mt-1 text-lg font-bold leading-snug">
+        <h3 className="mt-1 text-2xl md:text-3xl font-bold leading-snug">
           {wonder.name}
         </h3>
-        {wonder.rating > 0 && (
-          <div
-            className="flex gap-1 mt-2"
-            aria-label={`Rating: ${wonder.rating} out of 7`}
-          >
-            {Array.from({ length: 7 }).map((_, i) => (
-              <span
-                key={i}
-                className={`inline-block size-1.5 rounded-full ${
-                  i < wonder.rating ? 'bg-amber-400' : 'bg-white/20'
-                }`}
-              />
-            ))}
-          </div>
-        )}
         {/* Highlights — revealed on hover */}
         <ul className="mt-3 space-y-1 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-300 ease-in-out">
           {wonder.highlights.map(h => (
-            <li key={h} className="flex items-start gap-2 text-xs text-white/80">
+            <li key={h} className="flex items-start gap-2 text-sm text-white/80">
               <span className="mt-1.5 size-1 shrink-0 rounded-full bg-white/50" />
               {h}
             </li>
