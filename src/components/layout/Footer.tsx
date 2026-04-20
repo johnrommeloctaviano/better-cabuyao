@@ -31,6 +31,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
+        <div className="mb-8 flex w-full items-center justify-center gap-3 rounded-xl border border-green-700 bg-green-950 px-6 py-4">
+          <span className="text-2xl font-medium text-green-300">
+            Project Cost to the People of Cabuyao City = {' '}
+            <span className="font-bold text-white">₱0.00</span>
+          </span>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
