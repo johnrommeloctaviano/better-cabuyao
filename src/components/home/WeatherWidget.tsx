@@ -107,9 +107,7 @@ export default function WeatherWidget() {
         </button>
       </div>
 
-      {error && (
-        <p className="text-red-600 text-sm">{error}</p>
-      )}
+      {error && <p className="text-red-600 text-sm">{error}</p>}
 
       {loading && !data && (
         <div className="h-32 flex items-center justify-center text-gray-400">
@@ -123,14 +121,19 @@ export default function WeatherWidget() {
           <div className="md:col-span-1 rounded-2xl bg-primary-600 text-white p-6 flex flex-col justify-between shadow-md">
             <div>
               <p className="text-4xl mb-2">{condition.emoji}</p>
-              <p className="text-6xl font-bold leading-none">{data.temperature}°C</p>
+              <p className="text-6xl font-bold leading-none">
+                {data.temperature}°C
+              </p>
               <p className="text-primary-100 mt-2 text-lg">{condition.label}</p>
             </div>
             <div className="mt-6">
               <p className="text-primary-200 text-sm">Cabuyao City, Laguna</p>
               <p className="text-primary-200 text-xs mt-1">
-                Feels like {data.apparentTemperature}°C &middot;{' '}
-                Updated {data.updatedAt.toLocaleTimeString('en-PH', { hour: '2-digit', minute: '2-digit' })}
+                Feels like {data.apparentTemperature}°C &middot; Updated{' '}
+                {data.updatedAt.toLocaleTimeString('en-PH', {
+                  hour: '2-digit',
+                  minute: '2-digit',
+                })}
               </p>
             </div>
           </div>
@@ -160,7 +163,9 @@ export default function WeatherWidget() {
             <div className="col-span-2 sm:col-span-2 rounded-xl bg-sky-50 border border-sky-100 p-4 flex items-center gap-3">
               <span className="text-2xl">🌤️</span>
               <div>
-                <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">Source</p>
+                <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
+                  Source
+                </p>
                 <p className="text-sm text-gray-600">
                   Open-Meteo &middot; PAGASA Station Data
                 </p>
@@ -194,7 +199,9 @@ function DetailCard({
     <div className="rounded-xl bg-white border border-gray-100 shadow-sm p-4 flex flex-col gap-2">
       <div className="flex items-center gap-2 text-gray-500">
         {icon}
-        <span className="text-xs uppercase tracking-wide font-medium">{label}</span>
+        <span className="text-xs uppercase tracking-wide font-medium">
+          {label}
+        </span>
       </div>
       <p className="text-2xl font-bold text-gray-800">{value}</p>
     </div>

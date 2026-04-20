@@ -50,7 +50,16 @@ export default function CityMapWidget() {
       </div>
 
       <p className="mt-3 text-xs text-gray-400 text-right">
-        Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="hover:underline">OpenStreetMap</a> contributors
+        Map data ©{' '}
+        <a
+          href="https://www.openstreetmap.org/copyright"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          OpenStreetMap
+        </a>{' '}
+        contributors
       </p>
     </Section>
   );
