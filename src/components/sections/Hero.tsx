@@ -57,7 +57,7 @@ export default function Hero() {
       </div>
 
       <div className="relative container mx-auto px-4 py-16 md:py-28">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 animate-fade-in">
+        <div className="grid grid-cols-1 items-center gap-12 xl:gap-0 lg:grid-cols-2 animate-fade-in">
           {/* Left column — branding, CTAs, quick links */}
           <div>
             <span className="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold tracking-widest text-primary-100 uppercase backdrop-blur-sm">
