@@ -5,6 +5,8 @@ import {
   Instagram,
   Youtube,
   Heart,
+  Users,
+  Github,
 } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
@@ -38,7 +40,7 @@ const Footer: React.FC = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           <div>
             <div className="flex items-center mb-4">
               <img
@@ -95,6 +97,31 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           ))}
+
+          <div className="flex flex-col gap-5">
+            <a
+              href="https://bettergov.ph/join-us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-2 rounded-xl bg-blue-950 px-5 py-4 transition-colors hover:bg-blue-900"
+            >
+              <span className="flex items-center gap-2 text-sm font-semibold text-blue-300">
+                <Users className="h-4 w-4" />
+                Volunteer help with us
+              </span>
+            </a>
+            <a
+              href="https://github.com/bettergovph/bettergov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-2 rounded-xl bg-gray-900 px-5 py-4 transition-colors hover:bg-gray-800"
+            >
+              <span className="flex items-center gap-2 text-sm font-semibold text-gray-200">
+                <Github className="h-4 w-4" />
+                Contribute code with us
+              </span>
+            </a>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8">
