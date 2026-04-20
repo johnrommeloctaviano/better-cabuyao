@@ -5,6 +5,7 @@ import CityLeadershipSection from '../components/home/CityLeadershipSection';
 import CityInfoSection from '../components/home/CityInfoSection';
 import CityNicknamesSection from '../components/home/CityNicknamesSection';
 import CityWondersSection from '../components/home/CityWondersSection';
+import CityAchievementsSection from '../components/home/CityAchievementsSection';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
         <CityInfoSection />
         <CityNicknamesSection />
         <CityWondersSection />
+        <CityAchievementsSection />
         <ServicesSection />
         <CityOverviewSection />
         <CityLeadershipSection />
