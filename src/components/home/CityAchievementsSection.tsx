@@ -299,7 +299,7 @@ export default function CityAchievementsSection() {
   ] = achievements;
 
   return (
-    <section className="py-20 px-2.5 border bg-gray-50 overflow-hidden">
+    <section className="py-20 px-2.5 bg-gray-50 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12">
@@ -316,7 +316,7 @@ export default function CityAchievementsSection() {
         </div>
 
         {/* Bento grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
           {/* Row 1: [col-span-2] + [col-span-1] + [col-span-1] */}
           <AchievementCard
             item={milestone}

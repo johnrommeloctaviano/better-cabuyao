@@ -187,7 +187,7 @@ export default function CityWondersSection() {
 
   return (
     <section className="py-20 px-4 bg-white overflow-hidden">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12">
           <p className="text-xs font-mono uppercase tracking-[0.3em] text-gray-400 mb-3">

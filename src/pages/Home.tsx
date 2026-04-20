@@ -19,10 +19,10 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <CityInfoSection />
+        <ServicesSection />
         <CityNicknamesSection />
         <CityWondersSection />
         <CityAchievementsSection />
-        <ServicesSection />
         <CityOverviewSection />
         <CityLeadershipSection />
       </main>
