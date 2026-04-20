@@ -142,13 +142,26 @@ export default function CityInfoSection() {
                 </p>
                 <p className="text-primary-100 mt-2">{condition.label}</p>
               </div>
-              <p className="text-primary-200 text-xs mt-4">
-                Cabuyao City, Laguna &middot; Updated{' '}
-                {data.updatedAt.toLocaleTimeString('en-PH', {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                })}
-              </p>
+              <div className="mt-4 pt-3 border-t border-primary-500">
+                <p className="text-primary-200 text-xs">
+                  Cabuyao City, Laguna &middot; Updated{' '}
+                  {data.updatedAt.toLocaleTimeString('en-PH', {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}
+                </p>
+                <p className="text-primary-300 text-xs mt-0.5">
+                  via{' '}
+                  <a
+                    href="https://open-meteo.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-white"
+                  >
+                    PAGASA Station Data · Map © OpenStreetMap contributors
+                  </a>
+                </p>
+              </div>
             </>
           ) : null}
         </div>
@@ -218,36 +231,6 @@ export default function CityInfoSection() {
           ) : (
             <p className="text-sm text-gray-400">Loading…</p>
           )}
-        </div>
-
-        {/* PAGASA card — full width, row 3 */}
-        <div className="md:col-span-3 rounded-xl bg-sky-50 border border-sky-100 p-4 flex items-center gap-3">
-          <span className="text-2xl">🌤️</span>
-          <div>
-            <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
-              Source
-            </p>
-            <p className="text-sm text-gray-600">
-              Open-Meteo &middot; PAGASA Station Data &middot; Map ©{' '}
-              <a
-                href="https://www.openstreetmap.org/copyright"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                OpenStreetMap
-              </a>{' '}
-              contributors
-            </p>
-            <a
-              href="https://pagasa.dost.gov.ph"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-primary-600 hover:underline"
-            >
-              pagasa.dost.gov.ph ↗
-            </a>
-          </div>
         </div>
       </div>
     </Section>
