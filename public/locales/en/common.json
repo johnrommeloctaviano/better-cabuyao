@@ -1,5 +1,5 @@
 {
-  "site_name": "Cabuyao City Portal",
+  "site_name": "BetterCabuyao.org",
   "site_description": "A community-run portal for the Cabuyao City",
   "hero": {
     "title": "BetterCabuyao.Org",
@@ -30,7 +30,7 @@
     "title": "Latest News & Updates"
   },
   "footer": {
-    "copyright": "© 2025 Cabuyao City Portal. All content is public domain unless otherwise specified."
+    "copyright": "© 2025 BetterCabuyao.Org. All content is public domain unless otherwise specified."
   },
   "navbar": {
     "government": "Government",

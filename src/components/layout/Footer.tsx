@@ -4,7 +4,8 @@ import {
   Twitter,
   Instagram,
   Youtube,
-  CheckCircle2,
+  Users,
+  Github,
 } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
@@ -29,26 +30,32 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mb-8 flex w-full items-center justify-center gap-3 rounded-xl border border-green-700 bg-green-950 px-4 py-3 md:px-6 md:py-4">
+          <span className="text-center text-base font-medium text-green-300 sm:text-lg md:text-2xl">
+            This Project Cost to the People of Cabuyao City = {' '}
+            <span className="font-bold text-white">₱0.00</span>
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           <div>
             <div className="flex items-center mb-4">
-              <CheckCircle2 className="h-12 w-12 mr-3" />
-              {/* <img
-                src="/ph-logo.webp"
-                alt="Philippines Coat of Arms"
-                className="h-12 w-12 mr-3"
-              /> */}
-
+              <img
+                src="/cabuyao-city-seal.png"
+                alt="Cabuyao City official seal"
+                className="h-16 w-16 mr-2"
+              />
               <div>
                 <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
+                <div className="text-xs text-gray-400">Cabuyao City, Laguna, Philippines</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+              BetterCabuyao.Org is a community-ran portal for Cabuyao City,
+              Laguna. Helping residents access government services, news, and
+              local resources.
             </p>
             <div className="flex space-x-4">
               {footerNavigation.socialLinks.map(link => (
@@ -62,6 +69,13 @@ const Footer: React.FC = () => {
                   {getSocialIcon(link.label)}
                 </Link>
               ))}
+            </div>
+            <div className="mt-6">
+              <img
+                src="/better-gov-logo.svg"
+                alt="BetterGov logo"
+                className="h-16"
+              />
             </div>
           </div>
 
@@ -82,12 +96,37 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           ))}
+
+          <div className="flex flex-col gap-5">
+            <a
+              href="https://bettergov.ph/join-us"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-2 rounded-xl bg-blue-950 px-5 py-4 transition-colors hover:bg-blue-900"
+            >
+              <span className="flex items-center gap-2 text-sm font-semibold text-blue-300">
+                <Users className="h-4 w-4" />
+                Volunteer help with us
+              </span>
+            </a>
+            <a
+              href="https://github.com/bettergovph/bettergov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-2 rounded-xl bg-gray-900 px-5 py-4 transition-colors hover:bg-gray-800"
+            >
+              <span className="flex items-center gap-2 text-sm font-semibold text-gray-200">
+                <Github className="h-4 w-4" />
+                Contribute code with us
+              </span>
+            </a>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              {t('footer.copyright')}
+              © {new Date().getFullYear()} BetterCabuyao.Org | MIT | CC BY 4.0 | Built by John Rommel Octaviano
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               <a
@@ -140,18 +179,7 @@ const Footer: React.FC = () => {
               >
                 Contribute at GitHub
               </Link>
-              <Link
-                to="/sitemap"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Sitemap
-              </Link>
-              <a
-                href="/accessibility"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Accessibility
-              </a>
+
             </div>
           </div>
         </div>

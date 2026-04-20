@@ -18,6 +18,19 @@ export default {
         mono: ['SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'monospace'],
         serif: ['Georgia', 'Times New Roman', 'serif'],
       },
+      animation: {
+        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+      },
+      keyframes: {
+        'glow-pulse': {
+          '0%, 100%': {
+            boxShadow: '0 0 12px rgba(34,197,94,0.2)',
+          },
+          '50%': {
+            boxShadow: '0 0 32px rgba(34,197,94,0.6)',
+          },
+        },
+      },
       colors: {
         primary: {
           50: '#e6f0fd',
