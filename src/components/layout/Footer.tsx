@@ -4,7 +4,6 @@ import {
   Twitter,
   Instagram,
   Youtube,
-  Heart,
   Users,
   Github,
 } from 'lucide-react';
