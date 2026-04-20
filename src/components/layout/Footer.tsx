@@ -45,8 +45,9 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+              BetterCabuyao.Org is a community-ran portal for Cabuyao City,
+              Laguna. Helping residents access government services, news, and
+              local resources.
             </p>
             <div className="flex space-x-4">
               {footerNavigation.socialLinks.map(link => (
