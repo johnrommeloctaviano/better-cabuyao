@@ -3,6 +3,7 @@ import ServicesSection from '../components/home/ServicesSection';
 import CityOverviewSection from '../components/home/CityOverviewSection';
 import CityLeadershipSection from '../components/home/CityLeadershipSection';
 import WeatherWidget from '../components/home/WeatherWidget';
+import CityMapWidget from '../components/home/CityMapWidget';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
         <Hero />
         <ServicesSection />
         <WeatherWidget />
+        <CityMapWidget />
         <CityLeadershipSection />
         <CityOverviewSection />
       </main>
