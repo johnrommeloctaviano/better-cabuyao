@@ -4,7 +4,7 @@ import {
   Twitter,
   Instagram,
   Youtube,
-  CheckCircle2,
+  Heart,
 } from 'lucide-react';
 import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
@@ -29,21 +29,19 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <CheckCircle2 className="h-12 w-12 mr-3" />
-              {/* <img
-                src="/ph-logo.webp"
-                alt="Philippines Coat of Arms"
+              <img
+                src="/cabuyao-city-seal.png"
+                alt="Cabuyao City official seal"
                 className="h-12 w-12 mr-3"
-              /> */}
-
+              />
               <div>
                 <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
+                <div className="text-xs text-gray-400">Cabuyao City, Laguna, Philippines</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm mb-4">
@@ -87,7 +85,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              {t('footer.copyright')}
+              © {new Date().getFullYear()} BetterCabuyao.Org | MIT | CC BY 4.0 | Built by John Rommel Octaviano
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               <a
