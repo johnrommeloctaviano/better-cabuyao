@@ -73,7 +73,7 @@ const wonders: Wonder[] = [
 
 function WonderCard({ wonder }: { wonder: Wonder }) {
   return (
-    <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden group">
+    <div className="relative w-full aspect-[3/4] sm:aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden group">
       {/* Placeholder image background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
         <svg
@@ -107,7 +107,7 @@ function WonderCard({ wonder }: { wonder: Wonder }) {
           {wonder.name}
         </h3>
         {/* Highlights — revealed on hover */}
-        <ul className="mt-3 space-y-1 max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        <ul className="mt-3 space-y-1">
           {wonder.highlights.map(h => (
             <li key={h} className="flex items-start gap-2 text-sm text-white/80">
               <span className="mt-1.5 size-1 shrink-0 rounded-full bg-white/50" />
