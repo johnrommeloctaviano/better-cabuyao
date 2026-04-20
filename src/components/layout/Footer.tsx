@@ -180,18 +180,7 @@ const Footer: React.FC = () => {
               >
                 Contribute at GitHub
               </Link>
-              <Link
-                to="/sitemap"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Sitemap
-              </Link>
-              <a
-                href="/accessibility"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Accessibility
-              </a>
+
             </div>
           </div>
         </div>
