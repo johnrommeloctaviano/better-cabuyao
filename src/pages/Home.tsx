@@ -3,6 +3,7 @@ import ServicesSection from '../components/home/ServicesSection';
 import CityOverviewSection from '../components/home/CityOverviewSection';
 import CityLeadershipSection from '../components/home/CityLeadershipSection';
 import CityInfoSection from '../components/home/CityInfoSection';
+import CityNicknamesSection from '../components/home/CityNicknamesSection';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <CityInfoSection />
+        <CityNicknamesSection />
         <ServicesSection />
         <CityOverviewSection />
         <CityLeadershipSection />
