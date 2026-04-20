@@ -2,8 +2,7 @@ import Hero from '../components/sections/Hero';
 import ServicesSection from '../components/home/ServicesSection';
 import CityOverviewSection from '../components/home/CityOverviewSection';
 import CityLeadershipSection from '../components/home/CityLeadershipSection';
-import WeatherWidget from '../components/home/WeatherWidget';
-import CityMapWidget from '../components/home/CityMapWidget';
+import CityInfoSection from '../components/home/CityInfoSection';
 import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
@@ -17,8 +16,7 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <ServicesSection />
-        <WeatherWidget />
-        <CityMapWidget />
+        <CityInfoSection />
         <CityLeadershipSection />
         <CityOverviewSection />
       </main>

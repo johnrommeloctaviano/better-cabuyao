@@ -139,28 +139,43 @@ export default function WeatherWidget() {
           </div>
 
           {/* Detail cards */}
-          <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <DetailCard
-              icon={<Droplets className="h-5 w-5 text-sky-500" />}
-              label="Humidity"
-              value={`${data.humidity}%`}
-            />
-            <DetailCard
-              icon={<Wind className="h-5 w-5 text-teal-500" />}
-              label="Wind Speed"
-              value={`${data.windSpeed} km/h`}
-            />
-            <DetailCard
-              icon={<Thermometer className="h-5 w-5 text-orange-400" />}
-              label="Feels Like"
-              value={`${data.apparentTemperature}°C`}
-            />
-            <DetailCard
-              icon={<Eye className="h-5 w-5 text-violet-400" />}
-              label="Visibility"
-              value={`${data.visibility} km`}
-            />
-            <div className="col-span-2 sm:col-span-2 rounded-xl bg-sky-50 border border-sky-100 p-4 flex items-center gap-3">
+          <div className="md:col-span-2 flex flex-col gap-4">
+            <div className="flex-1 rounded-xl bg-white border border-gray-100 shadow-sm p-5 flex flex-col gap-4">
+              <p className="text-xs uppercase tracking-wide font-semibold text-gray-400">
+                Current Conditions
+              </p>
+              {[
+                {
+                  icon: <Droplets className="h-4 w-4 text-sky-500" />,
+                  label: 'Humidity',
+                  value: `${data.humidity}%`,
+                },
+                {
+                  icon: <Wind className="h-4 w-4 text-teal-500" />,
+                  label: 'Wind Speed',
+                  value: `${data.windSpeed} km/h`,
+                },
+                {
+                  icon: <Thermometer className="h-4 w-4 text-orange-400" />,
+                  label: 'Feels Like',
+                  value: `${data.apparentTemperature}°C`,
+                },
+                {
+                  icon: <Eye className="h-4 w-4 text-violet-400" />,
+                  label: 'Visibility',
+                  value: `${data.visibility} km`,
+                },
+              ].map(row => (
+                <div key={row.label} className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-gray-500">
+                    {row.icon}
+                    <span className="text-sm">{row.label}</span>
+                  </div>
+                  <span className="text-lg font-bold text-gray-800">{row.value}</span>
+                </div>
+              ))}
+            </div>
+            <div className="rounded-xl bg-sky-50 border border-sky-100 p-4 flex items-center gap-3">
               <span className="text-2xl">🌤️</span>
               <div>
                 <p className="text-xs text-gray-400 uppercase tracking-wide font-medium">
@@ -183,27 +198,5 @@ export default function WeatherWidget() {
         </div>
       )}
     </Section>
-  );
-}
-
-function DetailCard({
-  icon,
-  label,
-  value,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="rounded-xl bg-white border border-gray-100 shadow-sm p-4 flex flex-col gap-2">
-      <div className="flex items-center gap-2 text-gray-500">
-        {icon}
-        <span className="text-xs uppercase tracking-wide font-medium">
-          {label}
-        </span>
-      </div>
-      <p className="text-2xl font-bold text-gray-800">{value}</p>
-    </div>
   );
 }
