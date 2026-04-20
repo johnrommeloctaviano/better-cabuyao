@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               <img
                 src="/cabuyao-city-seal.png"
                 alt="Cabuyao City official seal"
-                className="h-12 w-12 mr-3"
+                className="h-16 w-16 mr-2"
               />
               <div>
                 <div className="font-bold">{t('site_name')}</div>
