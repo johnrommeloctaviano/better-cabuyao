@@ -62,6 +62,13 @@ const Footer: React.FC = () => {
                 </Link>
               ))}
             </div>
+            <div className="mt-6">
+              <img
+                src="/better-gov-logo.svg"
+                alt="BetterGov logo"
+                className="h-16"
+              />
+            </div>
           </div>
 
           {footerNavigation.mainSections.map(section => (
