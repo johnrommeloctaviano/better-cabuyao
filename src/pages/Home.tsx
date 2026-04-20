@@ -15,10 +15,10 @@ const Home: React.FC = () => {
       />
       <main className="flex-grow">
         <Hero />
-        <ServicesSection />
         <CityInfoSection />
-        <CityLeadershipSection />
+        <ServicesSection />
         <CityOverviewSection />
+        <CityLeadershipSection />
       </main>
     </>
   );
