@@ -38,7 +38,7 @@
     "embla-carousel-react": "^8.6.0",
     "i18next": "^25.5.2",
     "i18next-browser-languagedetector": "^8.2.0",
-    "i18next-http-backend": "^3.0.2",
+    "i18next-http-backend": "^3.0.5",
     "js-yaml": "^4.1.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.575.0",
